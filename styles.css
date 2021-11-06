@@ -48,7 +48,7 @@ h2 {
 }
 
 .border {
-    border: solid 1px grey;
+    border: solid 1px lightgrey;
 }
 
 .outer-padding {
@@ -82,13 +82,14 @@ h2 {
 }
 
 .tdm-item-active {
-    color: black;
-    border-bottom: solid 3px lime;
+    color: 3E3F42;
+    border-bottom: solid 3px #27D381;;
 }
 
 .tdm-item-inactive {
-    color: lightgrey;
-    border-bottom: solid 3px lightgrey;
+    color: #3E3F42;
+    border-bottom: solid 3px #3E3F42;
+    opacity: 0.5;
 }
 
 #debt-payment {
@@ -101,7 +102,7 @@ h2 {
 
 #how-to-use {
     padding: 5px;
-    background-color: lightgrey;
+    background-color: #F9FAFB;
     border-radius: 8px;
     margin-top: 5px;
 }
@@ -123,6 +124,65 @@ h2 {
 .target-score-grid {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+#score-input-field {
+    padding: 14px;
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    /* or 145% */
+    display: flex;
+    align-items: center;
+    color: #3E3F42;
+    border: 1px solid #D7DEE4;
+    border-radius: 4px;
+    height: 50px;
+}
+
+#score-slider {
+    -webkit-appearance: none;
+    height: 24px;
+    background: orange;
+    outline: none;
+    border: 1px solid #D7DEE4;
+    border-radius: 4px;
+}
+
+#score-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 24px;
+    cursor: pointer;
+    border: 3.44565px solid #FFFFFF;
+    box-shadow: 0px 0px 4.5942px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+  }
+
+#score-slider::-moz-range-thumb {
+    width: 15px;
+    height: 24px;
+    cursor: pointer;
+    border: 3.44565px solid #FFFFFF;
+    box-shadow: 0px 0px 4.5942px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+  }
+
+#score-submit {
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    height: 50px;
+    background: #27D381;
+    border: 1px solid #00C999;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(22, 29, 37, 0.1), inset 0px 2px 0px rgba(255, 255, 255, 0.06);
+    border-radius: 4px;
 }
 
 #potential-impact-inner-container {
