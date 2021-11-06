@@ -19,7 +19,7 @@
 }
 
 .outer-padding {
-    padding: 10px;
+    padding: 20px;
 }
 
 /* div {
@@ -33,6 +33,10 @@
 
 .flex-row {
     display: flex;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
 }
 
 .tdm-item-active {
@@ -58,4 +62,34 @@
     background-color: lightgrey;
     border-radius: 10px;
     margin-top: 5px;
+}
+
+.hide-on-mobile {
+    display: none;
+}
+
+.score {
+    border-top: solid 1px lightgrey;
+}
+
+.target-score-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#potential-impact-inner-container {
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#payment-container {
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+#payment-container-label {
+    border-bottom: solid 1px black;
+    padding: 10px;
+    background-color: lightgrey;
 }
