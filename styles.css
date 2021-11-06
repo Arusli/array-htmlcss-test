@@ -143,9 +143,13 @@ h2 {
 }
 
 #score-slider {
+    width: 335px;
     -webkit-appearance: none;
     height: 24px;
-    background: orange;
+    /* Mathmetically Correct Ratio Slider */
+    /* background-image: linear-gradient(to right, #F53758 47%, #F2C632 47% 82%, #27D381 82%); */
+    /* Aesthetic Ratio Slider */
+    background-image: linear-gradient(to right, #F53758 40%, #F2C632 40% 75%, #27D381 75%);
     outline: none;
     border: 1px solid #D7DEE4;
     border-radius: 4px;
