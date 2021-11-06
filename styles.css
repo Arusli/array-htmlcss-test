@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.setwidth {
+    width: 375px;
+}
+
+.border {
+    border: solid 1px grey;
+}
+
+.outer-padding {
+    padding: 10px;
+}
+
+/* div {
+    border: solid 1px grey;
+} */
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.tdm-item-active {
+    color: black;
+    border-bottom: solid 3px lime;
+}
+
+.tdm-item-inactive {
+    color: lightgrey;
+    border-bottom: solid 3px lightgrey;
+}
+
+#debt-payment {
+    flex-grow: 2;
+}
+
+#debt-payment h4 {
+    margin-left: 10px;
+}
+
+#how-to-use {
+    padding: 5px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    margin-top: 5px;
+}
