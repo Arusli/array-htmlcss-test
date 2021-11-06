@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .wrapper {
@@ -11,7 +12,8 @@
 }
 
 .setwidth {
-    width: 375px;
+    min-width: 375px;
+    max-width: 550px;
 }
 
 .border {
@@ -86,10 +88,27 @@
 #payment-container {
     border: solid 1px black;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 #payment-container-label {
     border-bottom: solid 1px black;
     padding: 10px;
     background-color: lightgrey;
+}
+
+.flex-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-container {
+    height: 25px;
+}
+
+.flex-row-aligned {
+    display: flex;
+    align-items: center;
 }

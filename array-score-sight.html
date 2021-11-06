@@ -30,16 +30,22 @@
                 <div id='credit-scores'>
                     <h3>Credit Scores</h3>
                     <div class='flex-row'>
-                        <div class='flex-grow-1'>
-                            <h5>TransUnion</h5>
+                        <div class='flex-grow-1 flex-centered'>
+                            <div class='logo-container flex-row-aligned'>
+                                <img src='./assets/transunion.svg'></img>
+                            </div>
                             <div class='score'>673</div>
                         </div>
-                        <div class='flex-grow-1'>
-                            <h5>Equifax</h5>
+                        <div class='flex-grow-1 flex-centered'>
+                            <div class='logo-container flex-row-aligned'>
+                                <img src='./assets/Equifax.svg'></img>
+                            </div>
                             <div class='score'>673</div>
                         </div>
-                        <div class='flex-grow-1'>
-                            <h5>Experian</h5>
+                        <div class='flex-grow-1 flex-centered'>
+                            <div class='logo-container flex-row-aligned'>
+                                <img src='./assets/experian_logo.svg'></img>
+                            </div>
                             <div class='score'>673</div>
                         </div>
                     </div>
@@ -47,9 +53,9 @@
                 <div id='target-score'>
                     <h3>Target Score</h3>
                     <form class='target-score-grid'>
-                        <input type='text' />
-                        <input type='range' min='1' max='100'>
-                        <input type='submit' value='Set Target' />
+                        <input id='score-input-field' type='text' />
+                        <input id='score-slider' type='range' min='1' max='100'>
+                        <input id='score-submit' type='submit' value='Set Target' />
                     </form>
                 </div>
             </section>
@@ -63,15 +69,21 @@
                     <div id='potential-impact-inner-container' class='flex-row'>
                         <div class='flex-row flex-grow-1'>
                             <div>679</div>
-                            <div>Up</div>
+                            <div class='icon-container'>
+                                <img src='./assets/triangle-copy-7.svg' />
+                            </div>
                         </div>
                         <div class='flex-row flex-grow-1'>
                             <div>679</div>
-                            <div>Up</div>
+                            <div class='icon-container'>
+                                <img src='./assets/triangle-copy-7.svg' />
+                            </div>
                         </div>
                         <div class='flex-row flex-grow-1'>
                             <div>679</div>
-                            <div>Up</div>
+                            <div class='icon-container'>
+                                <img src='./assets/triangle-copy-7.svg' />
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -90,24 +102,30 @@
                         <div class='flex-row'>
                             <div class='grid flex-grow-1'>
                                 <div>TransUnion</div>
-                                <div>up</div>
+                                <div class='icon-container'>
+                                    <img src='./assets/triangle-copy-7.svg' />
+                                </div>
                                 <div>3 points</div>
                             </div>
                             <div class='grid flex-grow-1'>
                                 <div>TransUnion</div>
-                                <div>up</div>
+                                <div class='icon-container'>
+                                    <img src='./assets/triangle-copy-7.svg' />
+                                </div>
                                 <div>3 points</div>
                             </div>
                             <div class='grid flex-grow-1'>
                                 <div>TransUnion</div>
-                                <div>up</div>
+                                <div class='icon-container'>
+                                    <img src='./assets/triangle-copy-7.svg' />
+                                </div>
                                 <div>3 points</div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <div>
-                    <p>Important: Based on taking these actions, the best day to check for score increases is the 28th of the month. Allow up to three months to achieve full results. These recommendations are only estimates.  They do not take into consideration future factors like balance changes and late payments.</p>
+                    <p><strong>Important: </strong>Based on taking these actions, the best day to check for score increases is the 28th of the month. Allow up to three months to achieve full results. These recommendations are only estimates.  They do not take into consideration future factors like balance changes and late payments.</p>
                 </div>
                 <div>
                     <p>Vantage Score 3.0</p>
