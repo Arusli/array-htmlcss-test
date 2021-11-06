@@ -7,13 +7,20 @@
 }
 
 body {
+    color: #3E3F42;
     font-family: 'Heebo', sans-serif;
 }
 
 p {
+    color: #6B6C6F;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
+}
+
+h2 {
+    color: #1665D8;
+    font-size: 22px;
 }
 
 .fw-400 {
@@ -104,6 +111,7 @@ p {
 }
 
 .score {
+    color: #3E3F42;
     font-size: 36px;
     font-weight: 700;
 }
@@ -132,11 +140,22 @@ p {
 
 #payment-container-label {
     border-bottom: solid 1px black;
-    background-color: lightgrey;
+    border-radius: 8px 8px 0 0;
+    background-color: #F5FAFF;
+}
+
+.payment-title {
+    color: #1665D8;
 }
 
 .padding-10 {
     padding: 10px;
+}
+
+.points {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .flex-centered {
@@ -163,10 +182,12 @@ p {
 
 .section-title {
     font-size: 18px;
-    color: navy;
+    color: #07025B;
 }
 
-.points-count {
+.potential-points {
+    color: black;
+    font-weight: 500;
     font-size: 12px;
 }
 

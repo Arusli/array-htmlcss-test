@@ -16,10 +16,12 @@
 <body>
     <div class='wrapper'>
         <div class='flex-column setwidth border outer-padding'>
+            <!-- SCORESIGHT -->
             <div id='ScoreSight' class='margin-bottom-40'>
-                <h2 style='font-size: 22px'>ScoreSight</h2>
+                <h2>ScoreSight</h2>
                 <h5 style='font-size: 14px' class='fw-400'>Understand your score potential and the actions needed to get there.</h5>
             </div>
+            <!-- TOGGLE MENU -->
             <div id='target-debt-menu' class='flex-row margin-bottom-40'>
                 <div id='target-score' class='tdm-item-active border'>
                     <h4>Target Score</h4>
@@ -28,10 +30,12 @@
                     <h4>Debt Payment</h4>
                 </div>
             </div>
+            <!-- HOW TO USE -->
             <section id='how-to-use' class='margin-bottom-30'>
                 <h4 style='width: 300px'>How to use</h4>
                 <p class='fw-400'>First, select a target credit score. See what actions are available to reach this potential new score.</p>
             </section>
+            <!-- CREDIT SCORES -->
             <section>
                 <div id='credit-scores' class='margin-bottom-40'>
                     <h3 class='section-title'>Credit Scores</h3>
@@ -56,6 +60,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- TARGET SCORES FORM -->
                 <div id='target-score' class='margin-bottom-50'>
                     <h3 class='section-title'>Target Score</h3>
                     <form class='target-score-grid'>
@@ -65,84 +70,95 @@
                     </form>
                 </div>
             </section>
+            <!-- SECTION -->
             <section>
+                <!-- POTENTIAL IMPACT -->
                 <section class='margin-bottom-35'>
                     <h3 class='section-title'>Potential Impact</h3>
                     <div id='potential-impact-inner-container' class='flex-row'>
                         <div class='flex-row flex-grow-1'>
                             <div class='score'>679</div>
-                            <div class='flex-centered-align-center'>           
+                            <div class='flex-centered-align-center points'>           
                                 <img src='./assets/triangle-copy-7.svg' width='12px' height='9px' />
-                                <p class='points-count'>11</p>
+                                <p class='potential-points'>11</p>
                             </div>
                         </div>
                         <div class='flex-row flex-grow-1'>
                             <div class='score'>679</div>
-                            <div class='flex-centered-align-center'>           
+                            <div class='flex-centered-align-center points'>           
                                 <img src='./assets/triangle-copy-7.svg' width='12px' height='9px' />
-                                <p class='points-count'>11</p>
+                                <p class='potential-points'>11</p>
                             </div>
                         </div>
                         <div class='flex-row flex-grow-1'>
                             <div class='score'>679</div>
-                            <div class='flex-centered-align-center'>           
+                            <div class='flex-centered-align-center points'>           
                                 <img src='./assets/triangle-copy-7.svg' width='12px' height='9px' />
-                                <p class='points-count'>11</p>
+                                <p class='potential-points'>11</p>
                             </div>
                         </div>
                     </div>
                 </section>
+                <!-- RECOMMENDED ACTIONS -->
                 <section class='margin-bottom-20'>
                     <h3 class='section-title'>Recommended Actions</h3>
                     <p class='fw-400'>These recommendations are only estimates. They do not take into consideration future factors like balance changes and late payments.</p>
                 </section>
+                <!-- ACTIONS -->
                 <section>
-                    <div class='flex-row'>
+                    <!-- TOGGLE MENU 2 -->
+                    <div class='flex-row margin-bottom-20'>
                         <h5 class='flex-grow-1'>Action</h5>
                         <h5 class='flex-grow-1'>Account</h5>
                         <h5 class='flex-grow-1'>TransUnion</h5>
                         <h5 class='flex-grow-1'>Equifax</h5>
                         <h5 class='flex-grow-1'>Experian</h5>
                     </div>
+                    <!-- ACTIONS/PAYMENTS CONTAINERS -->
                     <div id='payment-container'>
                         <div id='payment-container-label' class='padding-10 flex-row'>
                             <img src='./assets/alerts-icon.png' />
-                            <h4>Make an On-time Payment</h4>
+                            <h4 class='payment-title'>Make an On-time Payment</h4>
                         </div>
                         <div class='padding-10'>BK OF AMER #456 9356 ***</div>
-                        <p class='padding-10 fw-400'>Making a payment on this acount could result in a 3 point score increase.</p>
+                        <p class='padding-10 fw-400'>Making a payment on this account could result in a 3 point score increase.</p>
                         <div class='flex-row'>
                             <div class='flex-column-align-left flex-grow-1 padding-10'>
                                 <div class='fw-400'>TransUnion</div>
                                 <div class='flex-row'>
                                     <img src='./assets/triangle-copy-7.svg' width='14px' height='11.2px' />
-                                    <div class='fw-400'>3 pts</div>
+                                    <div class='points'>3 pts</div>
                                 </div>
                             </div>
                             <div class='flex-column-align-left flex-grow-1 padding-10'>
                                 <div class='fw-400'>Equifax</div>
                                 <div class='flex-row'>
                                     <img src='./assets/triangle-copy-7.svg' width='14px' height='11.2px'  />
-                                    <div class='fw-400'>3 pts</div>
+                                    <div class='points'>3 pts</div>
                                 </div>
                             </div>
                             <div class='flex-column-align-left flex-grow-1 padding-10'>
                                 <div class='fw-400'>Experian</div>
                                 <div class='flex-row'>
                                     <img src='./assets/triangle-copy-7.svg' width='14px' height='11.2px'  />
-                                    <div class='fw-400'>3 pts</div>
+                                    <div class='points'>3 pts</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> 
+                <!-- end actions section -->
+            </section> 
+            <!-- end second section -->
+            <footer>
                 <div class='margin-top-35 margin-bottom-20'>
-                    <p><span style='font-weight: 500'>Important: </span>Based on taking these actions, the best day to check for score increases is the 28th of the month. Allow up to three months to achieve full results. These recommendations are only estimates.  They do not take into consideration future factors like balance changes and late payments.</p>
+                    <p><span style='font-weight: 500'>Important: </span>Based on taking these actions, the best day to check for score increases is the 28th of the month. Allow up to three months to achieve full results.<br />These recommendations are only estimates.  They do not take into consideration future factors like balance changes and late payments.</p>
                 </div>
                 <div class='margin-bottom-20'>
                     <p class='fw-500'>Vantage Score 3.0</p>
                 </div>
-            </section>
+            </footer>
+            
         </div> 
         <!-- end inner wrapper -->
     </div> 
