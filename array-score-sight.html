@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- title -->
     <title>Andrew Rusli html-css-test 1</title>
 </head>
 <body>
     <div class='wrapper'>
-        <div class='flex-column-center setwidth border outer-padding'>
-            <div>
-                <h2>ScoreSight</h2>
-                <h5>Understand your score potential and the actions needed to get there.</h5>
+        <div class='flex-column setwidth border outer-padding'>
+            <div id='ScoreSight' class='margin-bottom-40'>
+                <h2 style='font-size: 22px'>ScoreSight</h2>
+                <h5 style='font-size: 14px' class='fw-400'>Understand your score potential and the actions needed to get there.</h5>
             </div>
-            <div id='target-debt-menu' class='flex-row'>
+            <div id='target-debt-menu' class='flex-row margin-bottom-40'>
                 <div id='target-score' class='tdm-item-active border'>
                     <h4>Target Score</h4>
                 </div>
@@ -22,36 +28,36 @@
                     <h4>Debt Payment</h4>
                 </div>
             </div>
-            <section id='how-to-use'>
-                <h4>How to use</h4>
-                <p>First, select a target credit score. See what actions are available to reach this potential new score.</p>
+            <section id='how-to-use' class='margin-bottom-30'>
+                <h4 style='width: 300px'>How to use</h4>
+                <p class='fw-400'>First, select a target credit score. See what actions are available to reach this potential new score.</p>
             </section>
             <section>
-                <div id='credit-scores'>
-                    <h3>Credit Scores</h3>
+                <div id='credit-scores' class='margin-bottom-40'>
+                    <h3 class='section-title'>Credit Scores</h3>
                     <div class='flex-row'>
                         <div class='flex-grow-1 flex-centered'>
                             <div class='logo-container flex-row-aligned'>
                                 <img src='./assets/transunion.svg'></img>
                             </div>
-                            <div class='score'>673</div>
+                            <div class='score border-top'>673</div>
                         </div>
                         <div class='flex-grow-1 flex-centered'>
                             <div class='logo-container flex-row-aligned'>
                                 <img src='./assets/Equifax.svg'></img>
                             </div>
-                            <div class='score'>673</div>
+                            <div class='score border-top'>673</div>
                         </div>
                         <div class='flex-grow-1 flex-centered'>
                             <div class='logo-container flex-row-aligned'>
                                 <img src='./assets/experian_logo.svg'></img>
                             </div>
-                            <div class='score'>673</div>
+                            <div class='score border-top'>673</div>
                         </div>
                     </div>
                 </div>
-                <div id='target-score'>
-                    <h3>Target Score</h3>
+                <div id='target-score' class='margin-bottom-50'>
+                    <h3 class='section-title'>Target Score</h3>
                     <form class='target-score-grid'>
                         <input id='score-input-field' type='text' />
                         <input id='score-slider' type='range' min='1' max='100'>
@@ -60,32 +66,35 @@
                 </div>
             </section>
             <section>
-                <section>
-                    <h3>Recommended Actions</h3>
-                    <p>These recommendations are only estimates. They do not take into consideration future factors like balance changes and late payments.</p>
-                </section>
-                <section>
-                    <h3>Potential Impact</h3>
+                <section class='margin-bottom-35'>
+                    <h3 class='section-title'>Potential Impact</h3>
                     <div id='potential-impact-inner-container' class='flex-row'>
                         <div class='flex-row flex-grow-1'>
-                            <div>679</div>
-                            <div class='icon-container'>
-                                <img src='./assets/triangle-copy-7.svg' />
+                            <div class='score'>679</div>
+                            <div class='flex-centered-align-center'>           
+                                <img src='./assets/triangle-copy-7.svg' width='12px' height='9px' />
+                                <p class='points-count'>11</p>
                             </div>
                         </div>
                         <div class='flex-row flex-grow-1'>
-                            <div>679</div>
-                            <div class='icon-container'>
-                                <img src='./assets/triangle-copy-7.svg' />
+                            <div class='score'>679</div>
+                            <div class='flex-centered-align-center'>           
+                                <img src='./assets/triangle-copy-7.svg' width='12px' height='9px' />
+                                <p class='points-count'>11</p>
                             </div>
                         </div>
                         <div class='flex-row flex-grow-1'>
-                            <div>679</div>
-                            <div class='icon-container'>
-                                <img src='./assets/triangle-copy-7.svg' />
+                            <div class='score'>679</div>
+                            <div class='flex-centered-align-center'>           
+                                <img src='./assets/triangle-copy-7.svg' width='12px' height='9px' />
+                                <p class='points-count'>11</p>
                             </div>
                         </div>
                     </div>
+                </section>
+                <section class='margin-bottom-20'>
+                    <h3 class='section-title'>Recommended Actions</h3>
+                    <p class='fw-400'>These recommendations are only estimates. They do not take into consideration future factors like balance changes and late payments.</p>
                 </section>
                 <section>
                     <div class='flex-row'>
@@ -96,39 +105,42 @@
                         <h5 class='flex-grow-1'>Experian</h5>
                     </div>
                     <div id='payment-container'>
-                        <div id='payment-container-label'>Make an On-time Payment</div>
-                        <div>BK OF AMER #456 9356 ***</div>
-                        <p>Making a payment on this acount could result in a 3 point score increase.</p>
+                        <div id='payment-container-label' class='padding-10 flex-row'>
+                            <img src='./assets/alerts-icon.png' />
+                            <h4>Make an On-time Payment</h4>
+                        </div>
+                        <div class='padding-10'>BK OF AMER #456 9356 ***</div>
+                        <p class='padding-10 fw-400'>Making a payment on this acount could result in a 3 point score increase.</p>
                         <div class='flex-row'>
-                            <div class='grid flex-grow-1'>
-                                <div>TransUnion</div>
-                                <div class='icon-container'>
-                                    <img src='./assets/triangle-copy-7.svg' />
+                            <div class='flex-column-align-left flex-grow-1 padding-10'>
+                                <div class='fw-400'>TransUnion</div>
+                                <div class='flex-row'>
+                                    <img src='./assets/triangle-copy-7.svg' width='14px' height='11.2px' />
+                                    <div class='fw-400'>3 pts</div>
                                 </div>
-                                <div>3 points</div>
                             </div>
-                            <div class='grid flex-grow-1'>
-                                <div>TransUnion</div>
-                                <div class='icon-container'>
-                                    <img src='./assets/triangle-copy-7.svg' />
+                            <div class='flex-column-align-left flex-grow-1 padding-10'>
+                                <div class='fw-400'>Equifax</div>
+                                <div class='flex-row'>
+                                    <img src='./assets/triangle-copy-7.svg' width='14px' height='11.2px'  />
+                                    <div class='fw-400'>3 pts</div>
                                 </div>
-                                <div>3 points</div>
                             </div>
-                            <div class='grid flex-grow-1'>
-                                <div>TransUnion</div>
-                                <div class='icon-container'>
-                                    <img src='./assets/triangle-copy-7.svg' />
+                            <div class='flex-column-align-left flex-grow-1 padding-10'>
+                                <div class='fw-400'>Experian</div>
+                                <div class='flex-row'>
+                                    <img src='./assets/triangle-copy-7.svg' width='14px' height='11.2px'  />
+                                    <div class='fw-400'>3 pts</div>
                                 </div>
-                                <div>3 points</div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <div>
-                    <p><strong>Important: </strong>Based on taking these actions, the best day to check for score increases is the 28th of the month. Allow up to three months to achieve full results. These recommendations are only estimates.  They do not take into consideration future factors like balance changes and late payments.</p>
+                <div class='margin-top-35 margin-bottom-20'>
+                    <p><span style='font-weight: 500'>Important: </span>Based on taking these actions, the best day to check for score increases is the 28th of the month. Allow up to three months to achieve full results. These recommendations are only estimates.  They do not take into consideration future factors like balance changes and late payments.</p>
                 </div>
-                <div>
-                    <p>Vantage Score 3.0</p>
+                <div class='margin-bottom-20'>
+                    <p class='fw-500'>Vantage Score 3.0</p>
                 </div>
             </section>
         </div> 
