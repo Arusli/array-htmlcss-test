@@ -41,46 +41,44 @@
             </section>
            
             
-            
-            <!--TARGET AND CREDIT SECTION-->
-            <!-- <section id='target-credit-section'> -->
-                <!-- CREDIT SCORES -->
-                <div id='credit-scores'>
-                    <h3 class='section-title'>Credit Scores</h3>
-                    <div class='flex-row'>
-                        <div class='flex-grow-1 flex-centered'>
-                            <div class='logo-container flex-row-aligned'>
-                                <img src='./assets/transunion.svg'></img>
-                            </div>
-                            <div class='score border-top'>673</div>
+            <!-- CREDIT SCORES -->
+            <div id='credit-scores'>
+                <h3 class='section-title'>Credit Scores</h3>
+                <div class='flex-row'>
+                    <div class='flex-grow-1 flex-centered'>
+                        <div class='logo-container flex-row-aligned'>
+                            <img src='./assets/transunion.svg'></img>
                         </div>
-                        <div class='flex-grow-1 flex-centered'>
-                            <div class='logo-container flex-row-aligned'>
-                                <img src='./assets/Equifax.svg'></img>
-                            </div>
-                            <div class='score border-top'>673</div>
+                        <div class='score border-top'>673</div>
+                    </div>
+                    <div class='flex-grow-1 flex-centered'>
+                        <div class='logo-container flex-row-aligned'>
+                            <img src='./assets/Equifax.svg'></img>
                         </div>
-                        <div class='flex-grow-1 flex-centered'>
-                            <div class='logo-container flex-row-aligned'>
-                                <img src='./assets/experian_logo.svg'></img>
-                            </div>
-                            <div class='score border-top'>673</div>
+                        <div class='score border-top'>673</div>
+                    </div>
+                    <div class='flex-grow-1 flex-centered'>
+                        <div class='logo-container flex-row-aligned'>
+                            <img src='./assets/experian_logo.svg'></img>
                         </div>
+                        <div class='score border-top'>673</div>
                     </div>
                 </div>
-                <!-- TARGET SCORE FORM -->
-                <div id='target-score'>
-                    <h3 class='section-title'>Target Score</h3>
-                    <form class='target-score-grid'>
-                        <input id='score-input-field' type='text' maxlength='3' value='670'/>
-                        <input id='score-slider' type='range' min='1' max='100' value='60'>
-                        <input id='score-submit' type='submit' value='Set Target' />
-                    </form>
-                </div>
+            </div>
+
+            <!-- TARGET SCORE FORM -->
+            <div id='target-score'>
+                <h3 class='section-title'>Target Score</h3>
+                <form id='target-score-form'>
+                    <input id='score-input-field' type='text' maxlength='3' value='670'/>
+                    <input id='score-slider' type='range' min='1' max='100' value='60'>
+                    <input id='score-submit' type='submit' value='Set Target' />
+                </form>
+            </div>
             <!-- </section> -->
 
-            <!-- ACTION/IMPACT SECTION -->
-            <section id='rec-actions-container'>
+            <!-- RECOMMENDED ACTIONS SECTION -->
+            <section id='ra-container'>
                 <!-- POTENTIAL IMPACT -->
                 <section id='potential-impact'>
                     <h3 class='section-title'>Potential Impact</h3>
@@ -111,14 +109,16 @@
                             <div class='flex-grow-1'>Experian</div>
                     </div>
                 </section>
+
                 <!-- RECOMMENDED ACTIONS -->
-                <section id='rec-actions'>
+                <section id='ra-header'>
                     <h3 class='section-title'>Recommended Actions</h3>
                     <p class='fw-400'>These recommendations are only estimates. They do not take into consideration future factors like balance changes and late payments.</p>
                 </section>
+
                 <!-- ACTIONS -->
-                <section>
-                    <!-- TOGGLE MENU 2 -->
+                <section id='actions'>
+                    <!-- MENU 2 -->
                     <div id='menu-2' class='flex-row'>
                         <h5 class='flex-grow-1'>Action</h5>
                         <h5 class='flex-grow-1'>Account</h5>
@@ -127,8 +127,8 @@
                         <h5 class='flex-grow-1'>Experian</h5>
                     </div>
                     <!-- ACTIONS/PAYMENTS CONTAINERS -->
-                    <div id='payment-container'>
-                        <div id='payment-container-label' class='padding-10 flex-row'>
+                    <div class='payment-container'>
+                        <div class='payment-container-label padding-10 flex-row'>
                             <img src='./assets/alerts-icon.png' />
                             <h4 class='payment-title'>Make an On-time Payment</h4>
                         </div>
@@ -161,7 +161,7 @@
                 </section> 
                 <!-- end actions section -->
             </section> 
-            <!-- end ACTION/IMPACT Section -->
+            <!-- end RECOMMENED ACTIONS Section -->
 
             <!-- FOOTER -->
             <footer id='footer'>
