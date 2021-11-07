@@ -289,6 +289,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: left;
+    justify-content: center;
 }
 
 .payments-bureau-name {
@@ -486,8 +487,7 @@ p {
     }
 
     .main-grid {
-        column-gap: 100px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 4fr 3fr;
         grid-template-areas:
         "header header"
         "toggle-menu toggle-menu"
@@ -498,8 +498,7 @@ p {
     }
 
     #ra-container {
-        column-gap: 100px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 4fr 3fr;
         grid-template-areas:
             "ra-header potential-impact"
             "actions actions";
@@ -530,6 +529,10 @@ p {
     }
 
     .pi-bureau-name {
+        display: none;
+    }
+
+    .payments-bureau-name {
         display: none;
     }
 
