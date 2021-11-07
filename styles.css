@@ -225,11 +225,10 @@ p {
 }
 /*  */
 
-#potential-impact-inner-container {
+#pi-inner-container {
     border: solid 1px #D7DEE4;
     border-radius: 8px;
     display: grid;
-    padding: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 29px;
 }
@@ -266,6 +265,10 @@ p {
     grid-area: account;
     display: flex;
     align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3E3F42;
+
 }
 
 .result-desc {
@@ -386,6 +389,7 @@ p {
 }
 
 .payment-title {
+    font-size: 16px;
     color: #1665D8;
 }
 
@@ -433,7 +437,7 @@ p {
     font-size: 12px;
 }
 
-.fw-400 {
+/* .fw-400 {
     font-weight: 400;
 }
 
@@ -443,7 +447,7 @@ p {
 
 .fw-700 {
     font-weight: 700;
-}
+} */
 
 /* .margin-bottom-10 {
     margin-bottom: 10px;
@@ -504,6 +508,17 @@ p {
             "actions actions";
         border: solid 1px lightgrey;
         border-radius: 8px;
+        padding-top: 34px;
+    }
+
+    #pi-inner-container {
+        border: none;
+    }
+
+    #ra-header {
+    }
+
+    #menu-2 {
     }
 
     #target-score-form {
@@ -551,6 +566,7 @@ p {
 
     .account {
         border: none;
+        font-size: 14px;
     }
 
     #menu-2 {
