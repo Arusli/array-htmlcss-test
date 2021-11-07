@@ -18,11 +18,6 @@ p {
     line-height: 22px;
 }
 
-h2 {
-    color: #1665D8;
-    font-size: 22px;
-}
-
 /* GRID */
 
 .main-grid {
@@ -44,34 +39,80 @@ h2 {
 
 #toggle-menu {
     grid-area: toggle-menu;
+    margin-bottom: 40px;
 }
 
 #how-to-use {
     grid-area: how-to-use;
-    padding: 5px;
+    padding: 15px 20px 13px 20px;
     background-color: #F9FAFB;
     border-radius: 8px;
     margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+#how-to-use h4 {
+    width: 300px;
 }
 
 #credit-scores {
     grid-area: credit-scores;
+    margin-bottom: 40px;
 }
 
 #target-score {
     grid-area: target-score;
+    margin-bottom: 50px;
 }
 
 #rec-actions-container {
     grid-area: rec-actions-container;
 }
 
+#potential-impact {
+    margin-bottom: 35px;
+}
+
+#menu-2 {
+    margin-bottom: 20px;
+}
+
+#rec-actions {
+    margin-bottom: 20px;
+}
+
 #footer {
     grid-area: footer;
 }
 
+#footer .disclaimer {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.footer-score {
+    margin-bottom: 20px;
+}
+
+.footer-score p {
+    font-weight: 500;
+}
 
 /* SECTIONS */
+#ScoreSight {
+    margin-bottom: 40px;
+}
+
+#ScoreSight h5 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#ScoreSight h2 {
+    color: #1665D8;
+    font-size: 22px;
+}
+
 
 
 .fw-400 {
@@ -175,6 +216,7 @@ h2 {
         "input-field"
         "slider"
         "button";
+    row-gap: 20px;
 }
 
 #score-input-field {
@@ -314,11 +356,7 @@ h2 {
     font-size: 12px;
 }
 
-#how-to-use {
-    padding: 15px 20px 13px 20px;
-}
-
-.margin-bottom-10 {
+/* .margin-bottom-10 {
     margin-bottom: 10px;
 }
 
@@ -344,7 +382,7 @@ h2 {
 
 .margin-top-35 {
     margin-top: 35px;
-}
+} */
 
 
 
@@ -370,6 +408,7 @@ h2 {
     .target-score-grid {
         display: grid;
         column-gap: 18px;
+        row-gap: 28px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
             "input-field input-field input-field button button"
