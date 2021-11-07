@@ -138,6 +138,7 @@ p {
     grid-template-areas: 
         "input-field"
         "slider"
+        "score-scale"
         "button";
     row-gap: 20px;
 }
@@ -159,6 +160,21 @@ p {
     height: 50px;
 }
 
+#score-scale {
+    grid-area: score-scale;
+    display: grid;
+    grid-template-columns: 8fr 7.5fr 4.5fr 1fr;
+    font-size: 12px;
+    font-weight: 400;
+    color: #6B6C6F;
+    margin-top: -15px;
+    width: 335px;
+}
+
+#scale-increment-end {
+    align-self: end;
+}
+
 #score-slider {
     grid-area: slider;
     width: 335px;
@@ -176,8 +192,8 @@ p {
 #score-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 15px;
-    height: 30px;
+    width: 19.5px;
+    height: 27.5px;
     cursor: pointer;
     border: 3.44565px solid #FFFFFF;
     box-shadow: 0px 0px 4.5942px rgba(0, 0, 0, 0.25);
@@ -185,8 +201,8 @@ p {
   }
 
 #score-slider::-moz-range-thumb {
-    width: 15px;
-    height: 30px;
+    width: 19.5px;
+    height: 27.5px;
     cursor: pointer;
     border: 3.44565px solid #FFFFFF;
     box-shadow: 0px 0px 4.5942px rgba(0, 0, 0, 0.25);
@@ -493,10 +509,15 @@ p {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
             "input-field input-field input-field button button"
-            "slider slider slider slider slider";
+            "slider slider slider slider slider"
+            "score-scale score-scale score-scale score-scale score-scale";
     }
 
     #score-slider {
+        width: 100%;
+    }
+
+    #score-scale {
         width: 100%;
     }
 
@@ -535,6 +556,20 @@ p {
 
     #footer {
         margin-left: 30px;
+    }
+
+    #score-slider::-webkit-slider-thumb {
+        border: 5.33333px solid #FFFFFF;
+        height: 33.3px;
+        width: 33.3px;
+        border-radius: 50px;
+    }
+    
+    #score-slider::-moz-range-thumb {
+        border: 5.33333px solid #FFFFFF;
+        height: 33.3px;
+        width: 33.3px;
+        border-radius: 50px;
     }
 
   }
