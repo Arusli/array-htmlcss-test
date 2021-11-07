@@ -226,7 +226,7 @@ p {
 /*  */
 
 #potential-impact-inner-container {
-    border: solid 1px black;
+    border: solid 1px #D7DEE4;
     border-radius: 8px;
     display: grid;
     padding: 10px;
@@ -289,6 +289,10 @@ p {
     display: flex;
     flex-direction: column;
     align-items: left;
+}
+
+.payments-bureau-name {
+    font-weight: 400;
 }
 
 
