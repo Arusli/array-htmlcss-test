@@ -217,7 +217,10 @@ p {
 
 /* Payments grid */
 .payment-container {
-    border: solid 1px black;
+    border-top: solid 1px #D7DEE4;
+    border-right: solid 1px #D7DEE4;
+    border-bottom: solid 1px #D7DEE4;
+    border-left: solid 1px #D7DEE4;
     border-radius: 8px;
     /* display: flex;
     flex-direction: column; */
@@ -235,13 +238,15 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-bottom: solid 1px black;
-    border-radius: 8px 8px 0 0;
     background-color: #F5FAFF;
+    border-radius: inherit;
 }
 
 .account {
+    border-top: solid 1px grey;
     grid-area: account;
+    display: flex;
+    align-items: center;
 }
 
 .result-desc {
@@ -472,7 +477,6 @@ p {
             "actions actions";
         border: solid 1px lightgrey;
         border-radius: 8px;
-        padding: 10px;
     }
 
     #target-score-form {
@@ -495,7 +499,18 @@ p {
     .payment-container {
         grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
         grid-template-areas: 
-        "payment-type account bureau-1 bureau-2 bureau-3"
+        "payment-type account bureau-1 bureau-2 bureau-3";
+        background-color: #F5FAFF;
+        border-radius: 0;
+    }
+
+    .bottom-payment-container {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .account {
+        border: none;
     }
 
     #menu-2 {
