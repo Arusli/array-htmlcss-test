@@ -87,10 +87,13 @@ p {
 
 #actions {
     grid-area: actions;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 #menu-2 {
-    margin-bottom: 20px;
+    display: none;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr
 }
 
 #footer {
@@ -212,17 +215,61 @@ p {
     column-gap: 29px;
 }
 
+/* Payments grid */
 .payment-container {
     border: solid 1px black;
     border-radius: 8px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "payment-type payment-type payment-type"
+    "account account account"
+    "result-desc result-desc result-desc"
+    "bureau-1 bureau-2 bureau-3";
 }
 
-.payment-container-label {
+.payment-type {
+    grid-area: payment-type;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     border-bottom: solid 1px black;
     border-radius: 8px 8px 0 0;
     background-color: #F5FAFF;
+    padding: 10px;
+}
+
+.account {
+    grid-area: account;
+    padding: 10px;
+}
+
+.result-desc {
+    grid-area: result-desc;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.bureau-1 {
+    grid-area: bureau-1;
+}
+
+.bureau-2 {
+    grid-area: bureau-2;
+}
+
+.bureau-3 {
+    grid-area: bureau-3;
+}
+
+.bureau {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    flex-grow: 1;
+    padding: 10px;
 }
 
 
@@ -448,5 +495,19 @@ p {
 
     #target-credit-section {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .payment-container {
+        grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "payment-type account bureau-1 bureau-2 bureau-3"
+    }
+
+    #menu-2 {
+        display: grid;
+    }
+
+    .result-desc {
+        display: none;
     }
   }
