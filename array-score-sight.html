@@ -17,26 +17,35 @@
     <div class='wrapper'>
         <div class='flex-column setwidth border outer-padding'>
             <!-- SCORESIGHT -->
-            <div id='ScoreSight' class='margin-bottom-40'>
-                <h2>ScoreSight</h2>
-                <h5 style='font-size: 14px' class='fw-400'>Understand your score potential and the actions needed to get there.</h5>
-            </div>
-            <!-- TOGGLE MENU -->
-            <div id='target-debt-menu' class='flex-row margin-bottom-40'>
-                <div id='target-score' class='tdm-item-active border'>
-                    <h4>Target Score</h4>
-                </div>
-                <div id='debt-payment' class='tdm-item-inactive'>
-                    <h4>Debt Payment</h4>
-                </div>
-            </div>
-            <!-- HOW TO USE -->
-            <section id='how-to-use' class='margin-bottom-30'>
-                <h4 style='width: 300px'>How to use</h4>
-                <p class='fw-400'>First, select a target credit score. See what actions are available to reach this potential new score.</p>
-            </section>
-            <!-- CREDIT SCORES -->
             <section>
+                <div id='ScoreSight' class='margin-bottom-40'>
+                    <h2>ScoreSight</h2>
+                    <h5 style='font-size: 14px' class='fw-400'>Understand your score potential and the actions needed to get there.</h5>
+                </div>
+            </section>
+            
+            <!-- TOGGLE MENU SECTION -->
+            <section>
+                <!-- TOGGLE MENU -->
+                <div id='target-debt-menu' class='flex-row margin-bottom-40'>
+                    <div id='target-score-menu-item' class='tdm-item-active border'>
+                        <h4>Target Score</h4>
+                    </div>
+                    <div id='debt-payment-menu-item' class='tdm-item-inactive'>
+                        <h4>Debt Payment</h4>
+                    </div>
+                </div>
+                <!-- HOW TO USE -->
+                <div id='how-to-use' class='margin-bottom-30'>
+                    <h4 style='width: 300px'>How to use</h4>
+                    <p class='fw-400'>First, select a target credit score. See what actions are available to reach this potential new score.</p>
+                </div>
+            </section>
+            
+            
+            <!--TARGET AND CREDIT SECTION-->
+            <section id='target-credit-section'>
+                <!-- CREDIT SCORES -->
                 <div id='credit-scores' class='margin-bottom-40'>
                     <h3 class='section-title'>Credit Scores</h3>
                     <div class='flex-row'>
@@ -64,13 +73,14 @@
                 <div id='target-score' class='margin-bottom-50'>
                     <h3 class='section-title'>Target Score</h3>
                     <form class='target-score-grid'>
-                        <input class='margin-bottom-20' id='score-input-field' type='text' maxlength='3' />
+                        <input class='margin-bottom-20' id='score-input-field' type='text' maxlength='3' value='670'/>
                         <input class='margin-bottom-50' id='score-slider' type='range' min='1' max='100' value='60'>
                         <input id='score-submit' type='submit' value='Set Target' />
                     </form>
                 </div>
             </section>
-            <!-- SECTION -->
+
+            <!-- ACTION/IMPACT SECTION -->
             <section>
                 <!-- POTENTIAL IMPACT -->
                 <section class='margin-bottom-35'>
@@ -152,7 +162,9 @@
                 </section> 
                 <!-- end actions section -->
             </section> 
-            <!-- end second section -->
+            <!-- end ACTION/IMPACT Section -->
+
+            <!-- FOOTER -->
             <footer>
                 <div class='margin-top-35 margin-bottom-20'>
                     <p><span style='font-weight: 500'>Important: </span>Based on taking these actions, the best day to check for score increases is the 28th of the month. Allow up to three months to achieve full results.<br />These recommendations are only estimates.  They do not take into consideration future factors like balance changes and late payments.</p>
