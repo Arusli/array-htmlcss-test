@@ -318,6 +318,8 @@ p {
 .result-desc {
     font-weight: 400;
     padding: 5px 24px 27px 21px; 
+    font-size: 14px;
+    line-height: 22px;
 }
 
 .bureau {
@@ -330,6 +332,8 @@ p {
 
 .payments-bureau-name {
     font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
 }
 
 #footer {
@@ -344,8 +348,9 @@ p {
     margin-bottom: 20px;
 }
 
-.footer-score p {
+.footer-score {
     font-weight: 500;
+    font-size: 14px;
 }
 
 /* SECTIONS */
