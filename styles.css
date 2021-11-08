@@ -93,7 +93,7 @@ p {
 
 #menu-2 {
     display: none;
-    grid-template-columns: 2fr 2fr 1fr 1fr 1fr
+    grid-template-columns: 4fr 1fr 1fr 1fr
 }
 
 #footer {
@@ -245,14 +245,20 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-    "payment-type payment-type payment-type"
-    "account account account"
+    "pc-subcontainer pc-subcontainer pc-subcontainer"
     "result-desc result-desc result-desc"
     "bureau-1 bureau-2 bureau-3";
 }
 
+.pc-subcontainer {
+    grid-area: pc-subcontainer;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: inherit;
+}
+
 .payment-type {
-    grid-area: payment-type;
+    /* grid-area: payment-type; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -260,15 +266,18 @@ p {
     border-radius: inherit;
 }
 
+.pc-padding {
+    padding: 15px;
+}
+
 .account {
     border-top: solid 1px grey;
-    grid-area: account;
+    /* grid-area: account; */
     display: flex;
     align-items: center;
     font-size: 16px;
     font-weight: 500;
     color: #3E3F42;
-
 }
 
 .result-desc {
@@ -516,9 +525,13 @@ p {
     }
 
     #ra-header {
+        margin-left: 30px;
     }
 
-    #menu-2 {
+    #menu-2-subcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 30px;
     }
 
     #target-score-form {
@@ -552,11 +565,19 @@ p {
     }
 
     .payment-container {
-        grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+        grid-template-columns: 4fr 1fr 1fr 1fr;
         grid-template-areas: 
-        "payment-type account bureau-1 bureau-2 bureau-3";
+        "pc-subcontainer bureau-1 bureau-2 bureau-3";
         background-color: #F5FAFF;
-        border-radius: 0;
+        border-radius: 0px;
+    }
+
+    .pc-subcontainer {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 0px;
     }
 
     .bottom-payment-container {
@@ -567,6 +588,10 @@ p {
     .account {
         border: none;
         font-size: 14px;
+    }
+
+    .pc-padding {
+        padding: 0px;
     }
 
     #menu-2 {
