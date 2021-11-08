@@ -80,13 +80,14 @@ p {
     padding: 15px 20px 15px 20px;
     background-color: #F9FAFB;
     border-radius: 8px;
-    margin-top: 5px;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 #how-to-use h4 {
     width: 300px;
-    font-size: 16px
+    font-size: 16px;
+    line-height: 24px;
 }
 
 #credit-scores {
@@ -138,17 +139,17 @@ p {
     grid-area: score-scale;
     display: grid;
     grid-template-columns: 8fr 7.5fr 4.5fr 1fr;
-    font-size: 12px;
-    font-weight: 400;
-    color: #6B6C6F;
     width: 100%;
     height: 25px; 
     margin-top: 4px;
     margin-bottom: 25px;
 }
 
-#scale-increment-end {
-    align-self: end;
+.scale-increment {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #6B6C6F;
 }
 
 /* SLIDER */
@@ -172,7 +173,7 @@ p {
 
 #score-slider::-moz-range-track {
     width: 100%;
-    height: 24px;
+    height: 14px;
     background-image: -moz-linear-gradient(left, #F53758 30%, #F2C632 75%, #27D381);
     border: 1px solid #D7DEE4;
     border-radius: 4px;
@@ -207,6 +208,7 @@ p {
     font-family: 'Heebo', sans-serif;
     font-weight: 500;
     font-size: 16px;
+    line-height: 23.5px;
     color: white;
     height: 42px;
     background: #27D381;
@@ -650,8 +652,99 @@ p {
         "footer footer";
     }
 
+    #ScoreSight h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    #ScoreSight p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #toggle-menu {
+        margin-bottom: 32px;
+    }
+
+    #target-score-menu-item {
+        font-size: 16px;
+        line-height: 24px;
+        width: 94px;
+    }
+
+    #debt-payment-menu-item {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
     #how-to-use {
-        width: 80%;
+        width: 86%;
+        padding: 26px 29px 25px 29px;
+        margin-bottom: 40px;
+    }
+
+    #how-to-use p {
+        line-height: 24px;
+    }
+
+    #target-score {
+        width: 86%;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .cs-title {
+        margin-bottom: 23px;
+    }
+    
+    .ts-title {
+        margin-bottom: 35px;
+    }
+
+    #target-score-form {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "input-field input-field input-field button button"
+            "slider slider slider slider slider"
+            "score-scale score-scale score-scale score-scale score-scale";
+    }
+
+    #score-input-field {
+        font-size: 24px;
+    }
+
+    #score-scale {
+        width: 100%;
+    }
+
+    .scale-increment {
+        font-size: 14px;
+    }
+
+    #score-slider::-webkit-slider-thumb {
+        border: 5.33333px solid #FFFFFF;
+        height: 28px;
+        width: 28px;
+        border-radius: 50px;
+        margin: -5px;
+    }
+    
+    #score-slider::-moz-range-thumb {
+        border: 5.33333px solid #FFFFFF;
+        height: 28px;
+        width: 28px;
+        border-radius: 50px;
+    }
+
+    #score-submit {
+        height: 50px;
+        margin-left: 18px;
+    }
+
+    #target-credit-section {
+        grid-template-columns: 1fr 1fr;
     }
 
     #ra-container {
@@ -671,7 +764,7 @@ p {
 
     #ra-header {
         margin-left: 30px;
-        width: 80%;
+        width: 86%;
     }
 
     #menu-2-subcontainer-1 {
@@ -684,45 +777,6 @@ p {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 29px;
-    }
-
-    #target-score {
-        width: 80%;
-    }
-
-    #target-score-form {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-            "input-field input-field input-field button button"
-            "slider slider slider slider slider"
-            "score-scale score-scale score-scale score-scale score-scale";
-    }
-
-    #score-scale {
-        width: 100%;
-    }
-
-    #score-slider::-webkit-slider-thumb {
-        border: 5.33333px solid #FFFFFF;
-        height: 33.3px;
-        width: 33.3px;
-        border-radius: 50px;
-        margin: -5px;
-    }
-    
-    #score-slider::-moz-range-thumb {
-        border: 5.33333px solid #FFFFFF;
-        height: 33.3px;
-        width: 33.3px;
-        border-radius: 50px;
-    }
-
-    #score-submit {
-        margin-left: 20px;
-    }
-
-    #target-credit-section {
-        grid-template-columns: 1fr 1fr;
     }
 
     .pi-bureau-name {
