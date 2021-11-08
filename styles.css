@@ -60,6 +60,12 @@ p {
     margin-bottom: 40px;
 }
 
+#cs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 29px;
+}
+
 #target-score {
     grid-area: target-score;
     margin-bottom: 50px;
@@ -93,7 +99,6 @@ p {
 
 #menu-2 {
     display: none;
-    grid-template-columns: 4fr 1fr 1fr 1fr
 }
 
 #footer {
@@ -230,6 +235,7 @@ p {
     border-radius: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 29px;
 }
 
 /* Payments grid */
@@ -605,6 +611,7 @@ p {
 
     #menu-2 {
         display: grid;
+        grid-template-columns: 4fr 1fr 1fr 1fr;
     }
 
     .result-desc {
