@@ -230,7 +230,6 @@ p {
     border-radius: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 29px;
 }
 
 /* Payments grid */
@@ -497,6 +496,7 @@ p {
 
     p {
         font-size: 16px;
+        line-height: 24px;
     }
 
     .main-grid {
@@ -508,6 +508,10 @@ p {
         "target-score credit-scores"
         "ra-container ra-container"
         "footer footer";
+    }
+
+    #how-to-use {
+        width: 81%;
     }
 
     #ra-container {
@@ -526,12 +530,17 @@ p {
 
     #ra-header {
         margin-left: 30px;
+        width: 81%;
     }
 
     #menu-2-subcontainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-left: 30px;
+    }
+
+    #target-score {
+        width: 81%;
     }
 
     #target-score-form {
