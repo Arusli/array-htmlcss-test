@@ -224,6 +224,7 @@ p {
         "potential-impact"
         "ra-header"
         "actions";
+    margin-bottom: 18px;
 }
 
 #potential-impact {
@@ -236,6 +237,12 @@ p {
     margin-bottom: 20px;
 }
 
+#ra-desc {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
 #actions {
     grid-area: actions;
     display: grid;
@@ -245,28 +252,6 @@ p {
 #menu-2 {
     display: none;
 }
-
-#footer {
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-}
-
-.footer-disclaimer {
-    margin-top: 35px;
-    margin-bottom: 20px;
-}
-
-.footer-score {
-    margin-bottom: 20px;
-}
-
-.footer-score p {
-    font-weight: 500;
-}
-
-/* SECTIONS */
 
 #pi-inner-container {
     border: solid 1px #D7DEE4;
@@ -284,24 +269,23 @@ p {
     border-bottom: solid 1px #D7DEE4;
     border-left: solid 1px #D7DEE4;
     border-radius: 8px;
-    /* display: flex;
-    flex-direction: column; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-    "pc-subcontainer pc-subcontainer pc-subcontainer"
-    "pc-subcontainer-3 pc-subcontainer-3 pc-subcontainer-3";
+    "pc-subcontainer-1 pc-subcontainer-1 pc-subcontainer-1"
+    "pc-subcontainer-2 pc-subcontainer-2 pc-subcontainer-2";
+    margin-bottom: 16px;
 }
 
-.pc-subcontainer {
-    grid-area: pc-subcontainer;
+.pc-subcontainer-1 {
+    grid-area: pc-subcontainer-1;
     display: grid;
     grid-template-columns: 1fr;
     border-radius: inherit;
 }
 
-.pc-subcontainer-3 {
-    grid-area: pc-subcontainer-3;
+.pc-subcontainer-2 {
+    grid-area: pc-subcontainer-2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -313,11 +297,12 @@ p {
     align-items: center;
     background-color: #F5FAFF;
     border-radius: inherit;
+    padding: 18px 0 13px 18px;
 }
 
-.pc-padding {
+/* .pc-padding {
     padding: 15px;
-}
+} */
 
 .account {
     border-top: solid 1px grey;
@@ -327,10 +312,12 @@ p {
     font-size: 16px;
     font-weight: 500;
     color: #3E3F42;
+    padding: 27px 0 0 21px;
 }
 
 .result-desc {
     font-weight: 400;
+    padding: 5px 24px 27px 21px; 
 }
 
 .bureau {
@@ -338,11 +325,32 @@ p {
     flex-direction: column;
     align-items: left;
     justify-content: center;
+    padding: 0 21px 22px 21px;
 }
 
 .payments-bureau-name {
     font-weight: 400;
 }
+
+#footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 12px;
+}
+
+.footer-disclaimer {
+    margin-bottom: 20px;
+}
+
+.footer-score p {
+    font-weight: 500;
+}
+
+/* SECTIONS */
+
+
 
 
 
@@ -483,7 +491,22 @@ p {
     font-size: 18px;
     color: #07025B;
     line-height: 30px;
+}
+
+.cs-title {
     margin-bottom: 10px;
+}
+
+.ts-title {
+    margin-bottom: 10px;
+}
+
+.pi-title {
+    margin-bottom: 10px;
+}
+
+.ra-title {
+    margin-bottom: 5px;
 }
 
 .potential-points {
@@ -708,12 +731,12 @@ p {
     .payment-container {
         grid-template-columns: 7fr 5fr;
         grid-template-areas: 
-        "pc-subcontainer pc-subcontainer-3";
+        "pc-subcontainer-1 pc-subcontainer-2";
         background-color: #F5FAFF;
         border-radius: 0px;
     }
 
-    .pc-subcontainer {
+    .pc-subcontainer-1 {
         grid-template-columns: 1fr 1fr;
         margin-left: 30px;
         margin-top: 15px;
@@ -721,7 +744,7 @@ p {
         border-radius: 0px;
     }
 
-    .pc-subcontainer-3 {
+    .pc-subcontainer-2 {
         column-gap: 29px;
     }
 
