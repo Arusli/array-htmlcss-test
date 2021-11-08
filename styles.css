@@ -332,10 +332,6 @@ p {
     border: solid 1px lightgrey;
 }
 
-.outer-padding {
-    padding: 20px;
-}
-
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -496,7 +492,7 @@ p {
 /* mobile-first responsive */
 @media only screen and (min-width: 800px) {
     .setwidth {
-        min-width: 700px;
+        min-width: 768px;
         max-width: 1110px;
     }
 
@@ -506,7 +502,7 @@ p {
     }
 
     .main-grid {
-        grid-template-columns: 4fr 3fr;
+        grid-template-columns: 7fr 5fr;
         grid-template-areas:
         "header header"
         "toggle-menu toggle-menu"
@@ -517,11 +513,11 @@ p {
     }
 
     #how-to-use {
-        width: 81%;
+        width: 80%;
     }
 
     #ra-container {
-        grid-template-columns: 4fr 3fr;
+        grid-template-columns: 7fr 5fr;
         grid-template-areas:
             "ra-header potential-impact"
             "actions actions";
@@ -536,17 +532,23 @@ p {
 
     #ra-header {
         margin-left: 30px;
-        width: 81%;
+        width: 80%;
     }
 
-    #menu-2-subcontainer {
+    #menu-2-subcontainer-1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-left: 30px;
     }
 
+    #menu-2-subcontainer-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 29px;
+    }
+
     #target-score {
-        width: 81%;
+        width: 80%;
     }
 
     #target-score-form {
@@ -580,7 +582,7 @@ p {
     }
 
     .payment-container {
-        grid-template-columns: 4fr 1fr 1fr 1fr;
+        grid-template-columns: 29fr 7fr 7fr 7fr;
         grid-template-areas: 
         "pc-subcontainer bureau-1 bureau-2 bureau-3";
         background-color: #F5FAFF;
@@ -611,7 +613,7 @@ p {
 
     #menu-2 {
         display: grid;
-        grid-template-columns: 4fr 1fr 1fr 1fr;
+        grid-template-columns: 7fr 5fr;
     }
 
     .result-desc {
