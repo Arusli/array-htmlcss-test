@@ -263,7 +263,7 @@ p {
 }
 
 #ra-desc {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
 }
@@ -285,6 +285,13 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 29px;
     padding: 20px 17px 17px 17px;
+}
+
+.pi-unit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 /* Payments grid */
@@ -708,6 +715,7 @@ p {
 
     .section-title {
         font-size: 20px;
+        line-height: 30px;
     }
 
     .cs-title {
@@ -780,6 +788,7 @@ p {
     .cs-score {
         font-size: 44px;
         line-height: 55px;
+        font-weight: 800;
         padding-top: 15px;
     }
 
@@ -799,9 +808,28 @@ p {
         padding: 0;
     }
 
+    .pi-title {
+        margin-bottom: 15px;
+    }
+
+    .pi-score {
+        font-size: 44px;
+        line-height: 55px;
+        font-weight: 800;
+}
+
     #ra-header {
         margin-left: 30px;
         width: 86%;
+    }
+
+    .ra-title {
+        margin-bottom: 25px;
+    }
+
+    #ra-desc {
+        font-size: 16px;
+        line-height: 24px;
     }
 
     #menu-2-subcontainer-1 {
