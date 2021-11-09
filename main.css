@@ -1,3 +1,4 @@
+/* Global */
 * {
     margin: 0;
     padding: 0;
@@ -33,11 +34,8 @@ p {
         "footer";
 }
 
-#header {
-    grid-area: header;
-}
-
 #ScoreSight {
+    grid-area: header;
     margin-bottom: 40px;
 }
 
@@ -98,6 +96,12 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 29px;
+}
+
+.cs-unit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #logo-1 {
@@ -524,11 +528,11 @@ p {
     margin-left: 7px;
 }
 
-.flex-centered {
+/* .flex-centered {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
 .flex-centered-align-center {
     display: flex;
@@ -548,12 +552,14 @@ p {
 .logo-container {
     height: 40px;
     padding-bottom: 12px;
-}
-
-.flex-row-aligned {
     display: flex;
     align-items: center;
 }
+
+/* .flex-row-aligned {
+    display: flex;
+    align-items: center;
+} */
 
 .section-title {
     font-size: 18px;
