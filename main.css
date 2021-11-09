@@ -819,6 +819,11 @@ p {
         padding-bottom: 27px;
     }
 
+    .bottom-payment-container {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
     .pc-subcontainer-1 {
         grid-template-columns: 1fr 1fr;
         margin-left: 30px;
@@ -831,15 +836,15 @@ p {
         column-gap: 29px;
     }
 
-    .bottom-payment-container {
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
+    .payment-type {
+        padding: 0px;
     }
 
     .account {
         border: none;
         font-size: 14px;
         line-height: 22px;
+        padding: 0px;
     }
 
     .card-icon {
@@ -861,9 +866,9 @@ p {
         margin-left: 2px;
     }
 
-    .pc-padding {
+    /* .pc-padding {
         padding: 0px;
-    }
+    } */
 
     .pc-tricon {
         width: 17px;
@@ -886,6 +891,11 @@ p {
 
     .result-desc {
         display: none;
+        padding: 0px;
+    }
+
+    .bureau {
+        padding: 0px;
     }
 
     #footer {
