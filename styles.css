@@ -101,9 +101,31 @@ p {
     column-gap: 29px;
 }
 
+#logo-1 {
+    width: 69px;
+    height: 18px;
+}
+
+#logo-2 {
+    height: 10.6px;
+    width: 54px;
+}
+
+#logo-3 {
+    height: 22px;
+    width: 64px;
+}
+
+.cs-score {
+    color: #3E3F42;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    padding-top: 9px;
+}
+
 #target-score {
     grid-area: target-score;
-    margin-bottom: 50px;
 }
 
 /* Target Score Form */
@@ -227,6 +249,7 @@ p {
         "ra-header"
         "actions";
     margin-bottom: 18px;
+    margin-top: 50px;
 }
 
 #potential-impact {
@@ -425,14 +448,6 @@ p {
 
 .hide-on-mobile {
     display: none;
-}
-
-.cs-score {
-    color: #3E3F42;
-    font-size: 36px;
-    line-height: 48px;
-    font-weight: 700;
-    padding-top: 9px;
 }
 
 .pi-score {
@@ -743,8 +758,29 @@ p {
         margin-left: 18px;
     }
 
-    #target-credit-section {
-        grid-template-columns: 1fr 1fr;
+    #credit-scores {
+        margin-bottom: 0px;
+    }
+
+    #logo-1 {
+        height: 22px;
+        width: 82px;
+    }
+    
+    #logo-2 {
+        height: 14px;
+        width: 69px;
+    }
+    
+    #logo-3 {
+        height: 25px;
+        width: 75px;
+    }
+
+    .cs-score {
+        font-size: 44px;
+        line-height: 55px;
+        padding-top: 15px;
     }
 
     #ra-container {
@@ -755,6 +791,7 @@ p {
         border: solid 1px lightgrey;
         border-radius: 8px;
         padding-top: 34px;
+        margin-top: 38px;
     }
 
     #pi-inner-container {
