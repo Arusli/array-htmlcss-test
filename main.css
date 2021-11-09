@@ -1,4 +1,4 @@
-/* Global */
+/* GLOBAL */
 * {
     margin: 0;
     padding: 0;
@@ -150,7 +150,6 @@ p {
     font-weight: 500;
     font-size: 22px;
     line-height: 32px;
-    /* or 145% */
     display: flex;
     align-items: center;
     color: #3E3F42;
@@ -178,9 +177,8 @@ p {
 }
 
 /* SLIDER */
-    /* Mathmetically Correct Ratio Slider */
-    /* background-image: linear-gradient(to right, #F53758 47%, #F2C632 47% 82%, #27D381 82%); */
-    /* Aesthetic Ratio Slider */
+/* Mathmetically Correct Ratio Slider = background-image: linear-gradient(to right, #F53758 47%, #F2C632 47% 82%, #27D381 82%); */
+/* It didn't look like design so I used an Aesthetic Ratio Slider */
 
 #score-slider {
     -webkit-appearance: none;
@@ -311,7 +309,7 @@ p {
     justify-content: flex-start;
 }
 
-/* Payments grid */
+/* PAYMENTS GRID */
 .payment-container {
     border-top: solid 1px #D7DEE4;
     border-right: solid 1px #D7DEE4;
@@ -340,7 +338,6 @@ p {
 }
 
 .payment-type {
-    /* grid-area: payment-type; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -372,13 +369,8 @@ p {
     height: 11.2px;
 }
 
-/* .pc-padding {
-    padding: 15px;
-} */
-
 .account {
     border-top: solid 1px #D7DEE4;
-    /* grid-area: account; */
     display: flex;
     align-items: center;
     font-size: 16px;
@@ -427,7 +419,7 @@ p {
     line-height: 24px;
 }
 
-/* CLASSES */
+/* ADDITIONAL CLASSES */
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -440,19 +432,13 @@ p {
     max-width: 375px;
 }
 
+.padding-outer {
+    padding: 29px 20px 0px 20px;
+}
+
+/* for development */
 .border {
     border: solid 1px lightgrey;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-column-align-left {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
 }
 
 .flex-row {
@@ -460,10 +446,6 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-}
-
-.flex-grow-1 {
-    flex-grow: 1;
 }
 
 .pi-bureau-name {
@@ -516,10 +498,6 @@ p {
     color: #1665D8;
 }
 
-.padding-10 {
-    padding: 10px;
-}
-
 .points {
     color: black;
     font-weight: 500;
@@ -527,12 +505,6 @@ p {
     line-height: 20.5px;
     margin-left: 7px;
 }
-
-/* .flex-centered {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
 
 .flex-centered-align-center {
     display: flex;
@@ -555,11 +527,6 @@ p {
     display: flex;
     align-items: center;
 }
-
-/* .flex-row-aligned {
-    display: flex;
-    align-items: center;
-} */
 
 .section-title {
     font-size: 18px;
@@ -590,13 +557,10 @@ p {
     line-height: 20.5px;
 }
 
-.padding-outer {
-    padding: 29px 20px 0px 20px;
-}
-
 
 
 /* RESPONSIVE (MOBILE FIRST) */
+
 @media only screen and (min-width: 800px) {
     .setwidth {
         min-width: 768px;
@@ -865,10 +829,6 @@ p {
         margin-right: 16px;
         margin-left: 2px;
     }
-
-    /* .pc-padding {
-        padding: 0px;
-    } */
 
     .pc-tricon {
         width: 17px;
