@@ -278,6 +278,20 @@ p {
     display: none;
 }
 
+.m2-sc1-item {
+    color: #6B6C6F;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.m2-sc2-item {
+    color: #07025B;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
 #pi-inner-container {
     border: solid 1px #D7DEE4;
     border-radius: 8px;
@@ -332,17 +346,23 @@ p {
     padding: 18px 0 13px 18px;
 }
 
+.pc-tricon {
+    width: 14px;
+    height: 11.2px;
+}
+
 /* .pc-padding {
     padding: 15px;
 } */
 
 .account {
-    border-top: solid 1px grey;
+    border-top: solid 1px #D7DEE4;
     /* grid-area: account; */
     display: flex;
     align-items: center;
     font-size: 16px;
     font-weight: 500;
+    line-height: 24px;
     color: #3E3F42;
     padding: 27px 0 0 21px;
 }
@@ -377,12 +397,13 @@ p {
 }
 
 .footer-disclaimer {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 }
 
 .footer-score {
     font-weight: 500;
     font-size: 14px;
+    line-height: 24px;
 }
 
 /* SECTIONS */
@@ -476,6 +497,7 @@ p {
 
 .payment-title {
     font-size: 16px;
+    line-height: 24px;
     color: #1665D8;
 }
 
@@ -487,6 +509,7 @@ p {
     color: black;
     font-weight: 500;
     font-size: 14px;
+    line-height: 20.5px;
     margin-left: 7px;
 }
 
@@ -807,6 +830,7 @@ p {
         border-radius: 8px;
         padding-top: 34px;
         margin-top: 38px;
+        margin-bottom: 37px;
     }
 
     #pi-inner-container {
@@ -874,6 +898,7 @@ p {
         "pc-subcontainer-1 pc-subcontainer-2";
         background-color: #F5FAFF;
         border-radius: 0px;
+        margin-bottom: 0px;
     }
 
     .pc-subcontainer-1 {
@@ -896,15 +921,30 @@ p {
     .account {
         border: none;
         font-size: 14px;
+        line-height: 22px;
     }
 
     .pc-padding {
         padding: 0px;
     }
 
+    .pc-tricon {
+        width: 17px;
+        height: 13px;
+    }
+
+    .points {
+        color: #110630;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 29px;
+        margin-left: 10px;
+    }
+
     #menu-2 {
         display: grid;
         grid-template-columns: 7fr 5fr;
+        margin-bottom: 15px;
     }
 
     .result-desc {
@@ -913,6 +953,15 @@ p {
 
     #footer {
         margin-left: 30px;
+    }
+
+    .footer-disclaimer {
+        margin-bottom: 16px;
+    }
+
+    .footer-score {
+        font-size: 16px;
+
     }
 
   }
