@@ -465,6 +465,11 @@ p {
     padding-top: 9px;
 }
 
+.pi-tricon {
+    width: 12px;
+    height: 9px;
+}
+
 .border-top {
     border-top: solid 1px lightgrey;
 }
@@ -542,6 +547,7 @@ p {
     color: black;
     font-weight: 500;
     font-size: 12px;
+    line-height: 20.5px;
 }
 
 .padding-outer {
@@ -805,6 +811,7 @@ p {
 
     #pi-inner-container {
         border: none;
+        border-radius: 0;
         padding: 0;
     }
 
@@ -816,7 +823,16 @@ p {
         font-size: 44px;
         line-height: 55px;
         font-weight: 800;
-}
+    }
+
+    .pi-tricon {
+        width: 14px;
+        height: 11px;
+    }
+
+    .potential-points {
+        font-size: 14px;
+    }
 
     #ra-header {
         margin-left: 30px;
